@@ -138,6 +138,8 @@ module Pocketsphinx
       process_audio(buffer, max_samples)
     end
 
+
+
     def process_audio(buffer, max_samples)
       sample_count = recordable.read_audio(buffer, max_samples)
 

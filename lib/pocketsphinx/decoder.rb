@@ -152,6 +152,15 @@ module Pocketsphinx
       words
     end
 
+
+
+
+
+
+    def set_keyphrase(keyphrase, name = 'default')
+      api_call :ps_set_keyphrase, ps_decoder, name, keyphrase
+    end
+
     # Adds new search using JSGF model.
     #
     # Convenience method to parse JSGF model from string and create a search.
